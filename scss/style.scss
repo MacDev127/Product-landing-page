@@ -18,6 +18,7 @@ body {
     font-family: "Hind Siliguri", sans-serif;
 }
 
+//--------------------- Navbar---------------------------\\
 .wrapper {
     max-width: 1200px;
     margin: 0 auto;
@@ -30,28 +31,28 @@ body {
     position: relative;
 }
 
-.navbar__top {
+.navbar_top {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.navbar__top--brand {
+.navbar_top_brand {
     font-size: 2.5rem;
     text-decoration: none;
     color: #fff;
     position: relative;
 }
 
-.navbar__top--brand img {
+.navbar_top_brand img {
     height: 100px;
 }
 
-.navbar__top--brand span {
+.navbar_top_brand span {
     color: #EF233C;
 }
 
-.navbar__top--toggler {
+.navbar_top_toggler {
     background-color: transparent;
     border: none;
     height: 3rem;
@@ -65,37 +66,37 @@ body {
     z-index: 999;
 }
 
-.navbar__top--toggler:hover {
+.navbar_top_toggler:hover {
     opacity: 0.8;
 }
 
-.navbar__top--toggler .line {
+.navbar_top_toggler .line {
     background-color: white;
     height: 0.2rem;
     width: 100%;
     transition: all 0.3s ease-in-out;
 }
 
-.navbar__top--toggler.change .line__1 {
+.navbar_top_toggler.change .line_1 {
     transform: rotate(45deg) translate(0.3rem, 0.8rem);
 }
 
-.navbar__top--toggler.change .line__2 {
+.navbar_top_toggler.change .line_2 {
     opacity: 0;
     visibility: hidden;
 }
 
-.navbar__top--toggler.change .line__3 {
+.navbar_top_toggler.change .line_3 {
     transform: rotate(-45deg) translate(0.3rem, -0.8rem);
 }
 
-@media (min-width: 992px) {
-    .navbar__top--toggler {
+@media screen and(min-width: 992px) {
+    .navbar_top_toggler {
         display: none;
     }
 }
 
-.navbar__collapse {
+.navbar_collapse {
     position: absolute;
     top: calc(100% - 1rem);
     left: 0;
@@ -105,23 +106,23 @@ body {
     transition: all 0.3s ease-in-out;
 }
 
-.navbar__collapse.show__nav {
+.navbar_collapse.show_nav {
     height: 242px;
 }
 
-.navbar__collapse--nav {
+.navbar_collapse_nav {
     background-color: #fff;
     padding: 1.5rem;
     border-radius: 0.5rem;
 }
 
-.navbar__collapse--nav li {
+.navbar_collapse_nav li {
     margin: 2rem 0;
     list-style-type: none;
     text-align: center;
 }
 
-.navbar__collapse--nav a {
+.navbar_collapse_nav a {
     color: #585858;
     text-decoration: none;
     font-size: 1.7rem;
@@ -129,47 +130,47 @@ body {
     transition: all 0.3s ease-in-out;
 }
 
-.navbar__collapse--nav a:hover {
+.navbar_collapse_nav a:hover {
     color: #EF233C;
 }
 
-.navbar__collapse--nav a.active {
+.navbar_collapse_nav a.active {
     color: #EF233C;
 }
 
-@media (min-width: 992px) {
-    .navbar__collapse--nav {
+@media screen and (min-width: 992px) {
+    .navbar_collapse_nav {
         padding: 0;
     }
-    .navbar__collapse--nav li {
+    .navbar_collapse_nav li {
         margin: 0;
     }
 }
 
-@media (min-width: 992px) {
-    .navbar__collapse {
+@media screen and (min-width: 992px) {
+    .navbar_collapse {
         position: relative;
         height: auto !important;
     }
-    .navbar__collapse--nav {
+    .navbar_collapse_nav {
         display: flex;
         justify-content: flex-end;
         align-items: center;
         background-color: transparent;
     }
-    .navbar__collapse--nav a {
+    .navbar_collapse_nav a {
         color: #fff;
     }
-    .navbar__collapse--nav a:hover {
+    .navbar_collapse_nav a:hover {
         color: #EF233C;
         opacity: 0.8;
     }
-    .navbar__collapse--nav li {
+    .navbar_collapse_nav li {
         margin-left: 4rem;
     }
 }
 
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
     .navbar {
         display: flex;
         justify-content: space-between;
@@ -177,6 +178,8 @@ body {
     }
 }
 
+//--------------------- Navbar end---------------------------\\
+// -------------Banner section-------------\\
 .banner {
     display: flex;
     flex-direction: column;
@@ -184,7 +187,7 @@ body {
     min-height: 100vh;
 }
 
-.banner__content {
+.banner_content {
     min-height: 50vh;
     display: flex;
     flex-direction: column;
@@ -193,30 +196,30 @@ body {
     text-align: center;
 }
 
-.banner__content--heading {
+.banner_content_heading {
     font-size: 4.3rem;
     font-weight: 600;
     letter-spacing: 2px;
     line-height: 1.4;
 }
 
-.banner__content--heading span {
+.banner_content_heading span {
     color: #EF233C;
     font-weight: 400;
 }
 
-.banner__content--para {
+.banner_content_para {
     margin: 2rem auto;
     max-width: 600px;
     font-size: 1.8rem;
     line-height: 1.6;
 }
 
-.banner__content--btns {
+.banner_content_btns {
     margin-top: 1rem;
 }
 
-.banner__content--btns .btn {
+.banner_content_btns .btn {
     border: none;
     background-color: #EF233C;
     border: 3px solid #EF233C;
@@ -227,32 +230,32 @@ body {
     transition: all 0.3s ease-in-out;
 }
 
-.banner__content--btns .btn.btn-white {
+.banner_content_btns .btn.btn-white {
     margin-right: 1rem;
     color: #EDF2F4;
 }
 
-.banner__content--btns .btn.btn-white:hover {
+.banner_content_btns .btn.btn-white:hover {
     background-color: #EDF2F4;
     color: #EF233C;
 }
 
-.banner__content--btns .btn.btn-transparent {
+.banner_content_btns .btn.btn-transparent {
     background-color: transparent;
     color: #EF233C;
 }
 
-.banner__content--btns .btn.btn-transparent:hover {
+.banner_content_btns .btn.btn-transparent:hover {
     background-color: #EF233C;
     color: #EDF2F4;
 }
 
-.banner__content--icons {
+.banner_content_icons {
     margin-top: 5rem;
     display: flex;
 }
 
-.banner__content--icons a {
+.banner_content_icons a {
     display: inline-block;
     text-decoration: none;
     color: #EF233C;
@@ -267,12 +270,12 @@ body {
     transition: all 0.3s ease-in-out;
 }
 
-.banner__content--icons a:hover {
+.banner_content_icons a:hover {
     color: #c91328;
     box-shadow: 0 0 6px 5px rgba(0, 0, 0, 0.2);
 }
 
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
     .banner {
         display: flex;
         flex-direction: row;
@@ -280,26 +283,20 @@ body {
         align-items: center;
         min-height: calc(100vh - 101px);
     }
-    .banner__content {
+    .banner_content {
         text-align: left;
         margin-right: 2rem;
         align-items: flex-start;
     }
-    .banner__content--para {
+    .banner_content_para {
         text-align: justify;
         letter-spacing: 0;
         word-spacing: 0;
     }
 }
 
-footer p {
-    text-align: center;
-    font-size: 12px;
-    padding: 10px;
-}
-
-@media (min-width: 768px) {
-    .banner__content--para {
+@media screen and (min-width: 768px) {
+    .banner_content_para {
         text-align: justify;
         letter-spacing: 0;
         word-spacing: 0;
@@ -307,10 +304,10 @@ footer p {
 }
 
 @media screen and (max-width: 600px) {
-    .banner__img img {
+    .banner_img img {
         height: 500px;
     }
-    .banner__content--para {
+    .banner_content_para {
         text-align: justify;
         letter-spacing: 0;
         word-spacing: 0;
@@ -318,12 +315,19 @@ footer p {
 }
 
 @media screen and (max-width: 375px) {
-    .banner__img img {
-        height: 400px;
+    .banner_img img {
+        height: 300px;
     }
-    .banner__content--para {
+    .banner_content_para {
         text-align: justify;
         letter-spacing: 0;
         word-spacing: 0;
+        font-size: 10px;
     }
+}
+
+/ -------------Banner section end-------------\\ footer p {
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
 }

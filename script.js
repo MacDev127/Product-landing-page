@@ -1,7 +1,7 @@
-const navbarToggler = document.querySelector('.navbar__top--toggler');
-const navbarCollapse = document.querySelector('.navbar__collapse');
+const navbarToggler = document.querySelector('.navbar_top_toggler');
+const navbarCollapse = document.querySelector('.navbar_collapse');
 
 navbarToggler.addEventListener('click', () => {
     navbarToggler.classList.toggle('change');
-    navbarCollapse.classList.toggle('show__nav');
+    navbarCollapse.classList.toggle('show_nav');
 });
